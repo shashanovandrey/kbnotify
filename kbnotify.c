@@ -12,7 +12,7 @@ gcc -O2 -s -lX11 `pkg-config --cflags --libs gio-2.0` -o kbnotify kbnotify.c
 #include <X11/XKBlib.h>
 #include <gio/gio.h>
 
-int main(int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
+int main(void)
 {
     GDBusProxyFlags flags;
     GDBusProxy *proxy;

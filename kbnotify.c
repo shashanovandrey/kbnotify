@@ -7,8 +7,8 @@ gcc -O2 -s -lX11 `pkg-config --cflags --libs gio-2.0` -o kbnotify kbnotify.c
 */
 
 #include <stdio.h>
-#include <unctrl.h>
 #include <string.h>
+#include <unctrl.h>
 #include <X11/XKBlib.h>
 #include <gio/gio.h>
 
